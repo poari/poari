@@ -240,10 +240,15 @@ const AppSimpleBoard = (props: IAppSimpleBoard) => {
         <p class="m-4">{appPayoff}</p>
         <div class="m-2 border rounded">
           <p class="m-2">
-            this is an early alpha version, use it carefully!
+            Issues are fetched at client-side, for private repositories provide
+            an apikey (personal access token), everything stays in your browser
+            localstorage.
           </p>
           <p class="m-2">
-            issue, feedbacks, feature request, pull requests are very welcome
+            Only Github and Gitlab issues fetching is supported at the moment.
+          </p>
+          <p class="m-2">
+            Issues, feedbacks, feature requests, pull requests are very welcome!
           </p>
         </div>
         <p class="m-4">
@@ -253,6 +258,16 @@ const AppSimpleBoard = (props: IAppSimpleBoard) => {
         </p>
         <p>{appAboutText}</p>
         <p>{appTitle} v.{appVersion}</p>
+        <p class="grid place-items-center mt-2">
+          <a href="https://fresh.deno.dev">
+            <img
+              width="197"
+              height="37"
+              src="https://fresh.deno.dev/fresh-badge.svg"
+              alt="Made with Fresh"
+            />
+          </a>
+        </p>
       </AppModal>
       <div
         class={`grid grid-cols-${
