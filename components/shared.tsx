@@ -308,7 +308,12 @@ const AppSettingsRepo = (props: IAppSettingsRepoProps) => {
             />
           </div>
           <div>
-            <button onClick={(e) => clickSave(e)}>save</button>
+            <button
+              class="mt-1 mb-1 p-1 w-20 text-white bg-red-300 rounded-md outline-none ring-offset-2 ring-red-300 hover:ring-2 focus:ring-2"
+              onClick={(e) => clickSave(e)}
+            >
+              save
+            </button>
           </div>
         </>
       )}
